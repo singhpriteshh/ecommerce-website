@@ -253,10 +253,16 @@ img {
   margin: 50px 50px;
 }
 .collection__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  justify-items: center;
   row-gap: 2rem;
 }
 
 .collection__box{
+  height: 250px;
+  width: 600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -300,6 +306,10 @@ img {
   margin: 50px 50px;
 }
 .featured__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: space-evenly;
   row-gap: 2rem;
 }
 
@@ -312,6 +322,8 @@ img {
 }
 
 .featured__box{
+  height: 300px;
+  width: 300px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -405,8 +417,65 @@ img {
 
 
 
-/*===== NEWSLETTER =====*/
-#subscribe{
+/*===== CONTACT =====*/
+
+
+#contact {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.section__text__p1{
+  text-align: center;
+}
+
+.title{
+  text-align: center;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+  transition: .3s;
+}
+
+.contact-info-container p:hover{
+  color: gray;
+  text-decoration: underline;
+}
+
+.contact-icon {
+  cursor: default;
+  height: 40px;
+  width: 40px;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* #subscribe{
   margin: 50px 50px;
 }
 
@@ -430,7 +499,7 @@ img {
   border: none;
   background-color: var(--gray-color);
   padding: 0 1rem;
-}
+} */
 
 
 /*===== SPONSORS =====*/
