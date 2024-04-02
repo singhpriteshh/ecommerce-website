@@ -595,8 +595,9 @@ img {
   }
 
   .collection__container{
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr;
+    /* grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr; */
+    flex-direction: column;
   }
   .collection__box{
     padding: .5rem 3rem 0;
